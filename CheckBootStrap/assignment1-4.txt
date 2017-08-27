@@ -1,0 +1,32 @@
+//install third party liabraries(Bootstrap)
+steps are as follows:
+1) open command prompt
+2) create new project with name checkBootstrap by typing
+          
+         ng new CheckBootStrap
+
+3) Now the CheckBootStrap project is created ,navigate to the project folder by running the command as
+        
+         cd CheckBootStrap
+4) Now run the following command in cmd to install BootStrap
+          
+         npm install --save bootstrap
+5) After successfully insalling bootstrap open the CheckBootStrap project folder in visual studio code then open angular-cli.json file associated with the CheckBootStrap folder and go to 
+the app =>style and type the following:
+
+         ../node-modules/bootstrap/dist/css/bootstrap.min.css
+
+6) Save the above
+7) Open the index.html file and type the following code
+
+       <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="form.invalid">submit</button>
+
+8) Now go to the cmd & navigate to the CheckBootStrap folder and type
+
+        ng serve
+
+9) Now open browser and type:
+
+      https://localhost:4200/index.html
+
+10) The output will be displayed on browser
